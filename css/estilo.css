@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+
+.logo{
+    height: 45px;
+    cursor: pointer;
+    
+}
+
+.contenedor{
+  width: 100%;
+  height: 35px;
+  background-color: rgba(91, 180, 180, 0.622);
+  
+ 
+}
+
+h1{
+    display: flex;
+    align-items: center;
+      justify-content: space-around;
+      font-size: 2rem;
+     
+}
+
+body{
+  background-color: rgba(0, 0, 0, 0.859);
+}
+.contenedorTres{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: 70% 5px auto auto;
+  width: 80%;
+  margin: 0 auto;
+  padding: 5px;
+  object-fit: contain;
+}
+
+.contenedorDisco{
+  width: 64vh;
+  height: 80vh;
+  margin: 20px 2px;
+}
+
+.img1{
+    width: 63vh;
+    height: 60%;
+    border-radius: 5px 5px;
+}
+
+.img1 img {
+  width: 100%;
+  height: 100%; 
+}
+
+.parrafoSecundario {
+  color: white;
+  font-size: 0.9rem;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center; }
+
+  
+/*CELULAR */
+@media (max-width: 768px) {
+  .contenedor {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(91, 180, 180, 0.622);
+    border-bottom: 4px; }
+  .contenedor .logo {
+    height: 60px;
+    padding-top: 2px;
+    padding-left: 60px;
+    cursor: pointer; }
+  @keyframes float {
+    0% {
+      transform: translatex(0); }
+    50% {
+      transform: translatex(0); }
+    100% {
+      transform: translatex(0); } }
+  .contenedor .navegacion {
+    width: 90%;
+    margin: auto;
+    padding: auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .contenedor .navegacion ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 2px;
+    position: relative; }
+  .contenedor .navegacion ul li:before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    background: rgba(244, 244, 244, 0.786);
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    transition: 0.4s ease-out; }
+  .contenedor .navegacion ul li:hover::before {
+    width: 100%; }
+  .contenedor .navegacion ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.997) !important;
+    font-family: monospace;
+    font-size: 1.1rem; }
+  .contenedorUno {
+    display: flex;
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(rgba(49, 48, 48, 0.064), rgba(0, 0, 0, 0.595)), url(..//img/fondo4tay.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+    .contenedorUno .titulo {
+      color: white;
+      font-size: 1.5rem;
+      font-family: 'Courier New', Courier, monospace;
+      margin-left: 45px;
+      padding-top: 270px; }
+    .contenedorUno .parrafoPrincipal {
+      color: white;
+      font-size: 1rem;
+      font-family: 'Courier New', Courier, monospace;
+      margin-left: 45px; }
+  .contenedorDos {
+    display: flex;
+    padding: 10px;
+    flex-direction: column; }
+    .contenedorDos .contenedorInicio {
+      flex-direction: 15%;
+      padding: 10px; }
+    .contenedorDos .subtitulo {
+      color: white;
+      font-size: 1,2rem;
+      font-family: 'Courier New', Courier, monospace;
+      margin-top: 1px;
+      text-align: center; }
+    .contenedorDos .img {
+      width: 100%;
+      height: 270px;
+      border-radius: 15px 15px;
+      margin: auto; }
+    .contenedorDos .img img {
+      width: 50%;
+      height: 50%; }
+    .contenedorDos .parrafoSecundario {
+      color: white;
+      font-size: 0,9rem;
+      font-family: 'Courier New', Courier, monospace;
+      margin-top: auto;
+      text-align: center; }
+  .contenedorTres {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto auto auto auto;
+    margin: 0 auto;
+    padding: auto;
+    object-fit: contain; }
+    .contenedorTres .contenedorDisco {
+      width: 100%;
+      height: 500px;
+      margin: 20px 2px;
+      padding-top: 0; }
+    .contenedorTres .img1 {
+      width: 100%;
+      height: 350px;
+      border-radius: 5px 5px;
+      padding-top: 70px; }
+    .contenedorTres .img1 img {
+      width: 50%;
+      height: 50%; }
+    .contenedorTres .parrafoSecundario {
+      color: white;
+      font-size: 0,9rem;
+      font-family: 'Courier New', Courier, monospace;
+      margin-top: auto;
+      text-align: center; }
+    .contenedorTres .logoSpotify {
+      width: 40px; }
+  .parrafoPie {
+    color: white;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center; }
+  .subtituloPie {
+    color: white;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center; }
+  .parrafoPie {
+    color: white;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center; }
+  .tituloComunidad {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 250px;
+    margin-left: 100px; }
+  .parrafoComunidad {
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 100px; }
+  .logoComunidad {
+    margin-left: 100px; }
+  .parrafopieComunidad {
+    padding-top: 350px;
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+    margin-left: 100px;
+    text-align: center;
+    font-size: 0.9rem; }
+  .logoDos {
+    margin-left: 100px; } }
